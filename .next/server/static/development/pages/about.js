@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -134,18 +134,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Navigation = () => {
-  return __jsx("ul", {
+  return __jsx("nav", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7,
       columnNumber: 9
     }
-  }, __jsx("li", {
+  }, __jsx("ul", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
+      columnNumber: 9
+    }
+  }, __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -153,21 +160,21 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 17
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 32
     }
   }, "Home"))), __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -175,17 +182,17 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 17
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 37
     }
-  }, "About"))));
+  }, "Personajes de Rick y Morty")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navigation);
@@ -1898,6 +1905,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Navigation */ "./components/Navigation.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index */ "./pages/index.js");
 var _jsxFileName = "/Users/Atari/Desktop/dormida/pages/about.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1905,62 +1913,75 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 function About(props) {
+  const charContainer = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    height: '100%',
+    justifyContent: 'space-evenly'
+  };
+  const charCard = {
+    display: 'flex',
+    flexFlow: 'column',
+    background: '#DE7C5A',
+    padding: '2em',
+    marginTop: '2em',
+    justifyContent: 'space-between',
+    height: '450px',
+    fontFamily: 'Roboto Mono'
+  };
   console.warn("data", props);
   return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 27,
       columnNumber: 8
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(_index__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 28,
+      columnNumber: 9
+    }
+  }), __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
       columnNumber: 9
     }
   }, __jsx("title", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 29,
       columnNumber: 15
     }
-  }, "Personajes de Rick y Morty")), __jsx(_components_Navigation__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "Personajes de Rick y Morty")), __jsx("div", {
+    style: charContainer,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
-    }
-  }), __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 8
-    }
-  }, "Personajes de Rick y Morty desde Next y React"), props.data.results.map(data => __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 34,
       columnNumber: 5
     }
-  }, __jsx("div", {
+  }, props.data.results.map(data => __jsx("div", {
+    key: data.id,
+    style: charCard,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 9
+      lineNumber: 37,
+      columnNumber: 5
     }
   }, __jsx("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 38,
       columnNumber: 9
     }
   }, data.name), __jsx("img", {
@@ -1969,31 +1990,38 @@ function About(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 39,
       columnNumber: 9
     }
   }), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 40,
       columnNumber: 9
     }
-  }, data.species), __jsx("p", {
+  }, "Species:", data.species), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 41,
       columnNumber: 9
     }
-  }, data.gender), __jsx("p", {
+  }, "Gender:", data.gender), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 42,
       columnNumber: 9
     }
-  }, data.origin.name)))));
+  }, "Origin:", data.origin.name), __jsx("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 9
+    }
+  }, "Status:", data.status)))));
 }
 
 About.getInitialProps = async function () {
@@ -2008,7 +2036,183 @@ About.getInitialProps = async function () {
 
 /***/ }),
 
-/***/ 5:
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Navigation_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Navigation.js */ "./components/Navigation.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/Atari/Desktop/dormida/pages/index.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+const Home = () => {
+  return __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 9
+    }
+  }, __jsx(GlobalStyles, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }), __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, __jsx("link", {
+    href: "https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap",
+    rel: "stylesheet",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }
+  }), __jsx("link", {
+    href: "https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap",
+    rel: "stylesheet",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }), __jsx("title", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, "Home")), __jsx(_components_Navigation_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  }));
+};
+
+const GlobalStyles = styled_components__WEBPACK_IMPORTED_MODULE_3__["createGlobalStyle"]`
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: Roboto Mono;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 3;
+ 
+}
+a:visited{
+    color: tomato;
+}
+a:hover{
+    color: #B10F2E;
+}
+a:active{
+    color: #FDFFFF;
+}
+body{
+    background-color: #570000;
+}
+nav {
+ width:100%;
+ display: flex;
+ 
+ height: 80px;
+ background: #280000;
+ color:#FDFFFF;
+ text-decoration:none;
+ 
+ font-family: 'IBM Plex Sans';
+ align-items: center;
+
+ font-size: 2em;
+ font-weight: bolder;
+
+}
+nav>ul{
+    display:flex;
+}
+nav>ul>li{
+    padding:1em;
+}
+h3{
+    
+    font-size:2em;
+}
+`;
+/* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
@@ -2083,6 +2287,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "styled-components":
+/*!************************************!*\
+  !*** external "styled-components" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
 
 /***/ }),
 

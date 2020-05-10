@@ -134,18 +134,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Navigation = () => {
-  return __jsx("ul", {
+  return __jsx("nav", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7,
       columnNumber: 9
     }
-  }, __jsx("li", {
+  }, __jsx("ul", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
+      columnNumber: 9
+    }
+  }, __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -153,21 +160,21 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 17
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 32
     }
   }, "Home"))), __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -175,17 +182,17 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 17
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 37
     }
-  }, "About"))));
+  }, "Personajes de Rick y Morty")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navigation);
@@ -1896,8 +1903,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Navigation_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Navigation.js */ "./components/Navigation.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/Atari/Desktop/dormida/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -1907,40 +1917,150 @@ const Home = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 9
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 8,
       columnNumber: 9
     }
-  }, __jsx("title", {
+  }, __jsx(GlobalStyles, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 17
+      columnNumber: 9
     }
-  }, "About")), __jsx(_components_Navigation_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, __jsx("link", {
+    href: "https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap",
+    rel: "stylesheet",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11,
       columnNumber: 9
     }
-  }), __jsx("h1", {
+  }), __jsx("link", {
+    href: "https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap",
+    rel: "stylesheet",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
       columnNumber: 9
     }
-  }, "Home"));
+  }), __jsx("title", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, "Home")), __jsx(_components_Navigation_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  }));
 };
 
+const GlobalStyles = styled_components__WEBPACK_IMPORTED_MODULE_3__["createGlobalStyle"]`
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: Roboto Mono;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 3;
+ 
+}
+a:visited{
+    color: tomato;
+}
+a:hover{
+    color: #B10F2E;
+}
+a:active{
+    color: #FDFFFF;
+}
+body{
+    background-color: #570000;
+}
+nav {
+ width:100%;
+ display: flex;
+ 
+ height: 80px;
+ background: #280000;
+ color:#FDFFFF;
+ text-decoration:none;
+ 
+ font-family: 'IBM Plex Sans';
+ align-items: center;
+
+ font-size: 2em;
+ font-weight: bolder;
+
+}
+nav>ul{
+    display:flex;
+}
+nav>ul>li{
+    padding:1em;
+}
+h3{
+    
+    font-size:2em;
+}
+`;
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
@@ -2009,6 +2129,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "styled-components":
+/*!************************************!*\
+  !*** external "styled-components" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
 
 /***/ }),
 
