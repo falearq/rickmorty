@@ -9,7 +9,7 @@ const Home = () => {
         <GlobalStyles/>
         <Head>
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"></link>   
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet"></link>    
+        <link href="https://fonts.googleapis.com/css?family=Ruda&display=swap" rel="stylesheet"></link> 
         <title>Home</title>
         </Head>
         <Navigation/>    
@@ -84,6 +84,7 @@ body{
     background-color: #570000;
 }
 nav {
+text-transform: uppercase;
  width:100%;
  display: flex;
  
@@ -91,8 +92,8 @@ nav {
  background: #280000;
  color:#FDFFFF;
  text-decoration:none;
- 
- font-family: 'IBM Plex Sans';
+ justify-content:center;
+ font-family: 'Ruda';
  align-items: center;
 
  font-size: 2em;
